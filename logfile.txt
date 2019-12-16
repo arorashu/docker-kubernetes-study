@@ -1,0 +1,54 @@
+(base) dhcp-wifi-8021x-155-41-84-26:spark-digital-equity pallekc$ docker build -t sample:dev .
+Sending build context to Docker daemon  1.023MB
+Step 1/7 : FROM node:13.3.0
+13.3.0: Pulling from library/node
+844c33c7e6ea: Pull complete 
+ada5d61ae65d: Pull complete 
+f8427fdf4292: Pull complete 
+f025bafc4ab8: Pull complete 
+7a9577c07934: Pull complete 
+9b4289f800f5: Pull complete 
+c74d80ccdeab: Pull complete 
+b418965736e5: Pull complete 
+fb4cff8b8d55: Pull complete 
+Digest: sha256:a4ee833346b09f24095868f6a9d2c7781b6ac319821f912df05f71c6f5a4259c
+Status: Downloaded newer image for node:13.3.0
+ ---> 2af77b226ea7
+Step 2/7 : WORKDIR /app
+ ---> Running in 1b3047a1a6d1
+Removing intermediate container 1b3047a1a6d1
+ ---> bb346bee0e12
+Step 3/7 : ENV PATH /app/node_modules/.bin:$PATH
+ ---> Running in 9b5a1a019638
+Removing intermediate container 9b5a1a019638
+ ---> ac109f9c54cd
+Step 4/7 : COPY package.json /app/package.json
+ ---> 957052489d99
+Step 5/7 : RUN npm install --silent
+ ---> Running in 19e090d49546
+added 1569 packages from 841 contributors and audited 907323 packages in 45.596s
+
+25 packages are looking for funding
+  run `npm fund` for details
+
+found 2 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+Removing intermediate container 19e090d49546
+ ---> 0d254e4ebd11
+Step 6/7 : RUN npm install react-scripts@3.0.1 -g --silent
+ ---> Running in 0b6c40fb4287
+/usr/local/bin/react-scripts -> /usr/local/lib/node_modules/react-scripts/bin/react-scripts.js
++ react-scripts@3.0.1
+added 1440 packages from 691 contributors in 44.206s
+Removing intermediate container 0b6c40fb4287
+ ---> 866b8a617363
+Step 7/7 : CMD ["npm", "start"]
+ ---> Running in cdc3533f7307
+Removing intermediate container cdc3533f7307
+ ---> 56351ec21cfa
+Successfully built 56351ec21cfa
+Successfully tagged sample:dev
+(base) dhcp-wifi-8021x-155-41-84-26:spark-digital-equity pallekc$ ls
+README.md		design-doc.md		dockerfile		node_modules		package-lock.json	package.json		public			src
+(base) dhcp-wifi-8021x-155-41-84-26:spark-digital-equity pallekc$ 
+

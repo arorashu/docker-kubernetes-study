@@ -10,13 +10,22 @@ We try to run the Spark Digital Equity WebApp: https://github.com/arorashu/spark
 in docker. We will document the steps, compare app size, and deploy times.
 
 
-## Results
+## Installation Results
  - There is no straight forward way to install Docker on Windows 10 Home
  - Docker does not work natively on WSL (Windows Subsystem for Linux) as well 
  - Cannot install on SCC, as no install permissions (also not available as a module, or brewfile)
+ - Installed Docker on MacOS
 
+## Memory Usage Comparison
+ - Without docker: 195 MB
+ - With Docker: 
+  - Unique app size: 360 MB 
+  - Shared size: 934 MB
+  - Total size: 1.29 GB
 
 ## References
 
 Install docker: https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
+Dockerize a React App:
+https://mherman.org/blog/dockerizing-a-react-app/
 

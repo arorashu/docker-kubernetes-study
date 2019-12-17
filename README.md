@@ -9,6 +9,11 @@ Teammates: Shubham Arora & Krishna Chaitanya
 We try to run the Spark Digital Equity WebApp: https://github.com/arorashu/spark-digital-equity.git
 in docker. We will document the steps, compare app size, and deploy times.
 
+## Introduction
+
+### What is Docker?
+Docker is an open-source project that automates the deployment of software applications inside containers by providing an additional layer of abstraction and automation of OS-level virtualization on Linux.
+
 
 ## Installation Results
  - There is no straight forward way to install Docker on Windows 10 Home
@@ -26,6 +31,6 @@ in docker. We will document the steps, compare app size, and deploy times.
 ## References
 
 Install docker: https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
-Dockerize a React App:
-https://mherman.org/blog/dockerizing-a-react-app/
+Dockerize a React App: https://mherman.org/blog/dockerizing-a-react-app/
+Docker Basics: https://docker-curriculum.com/
 

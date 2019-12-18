@@ -15,6 +15,24 @@ in docker. We will document the steps, compare app size, and deploy times.
 Docker is an open-source project that automates the deployment of software applications inside containers by providing an additional layer of abstraction and automation of OS-level virtualization on Linux.
 
 
+## How to Reproduce?
+
+1. Ensure you have Docker installed
+2. Run the following commands
+
+    git clone [https://github.com/arorashu/spark-digital-equity](https://github.com/arorashu/spark-digital-equity)
+    cd spark-digital-equity
+    docker build -t sample:dev .
+    docker run -v ${PWD}:/app -v /app/node-modules-p 3001:3000 --rm sample:dev
+
+3. The application should be running at 
+
+    localhost:3001
+
+4. This app is running in Docker!
+
+
+
 ## Installation Results
  - There is no straight forward way to install Docker on Windows 10 Home
  - Docker does not work natively on WSL (Windows Subsystem for Linux) as well 

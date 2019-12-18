@@ -20,10 +20,10 @@ Docker is an open-source project that automates the deployment of software appli
 1. Ensure you have Docker installed
 2. Run the following commands
 
-    git clone [https://github.com/arorashu/spark-digital-equity](https://github.com/arorashu/spark-digital-equity)
-    cd spark-digital-equity
-    docker build -t sample:dev .
-    docker run -v ${PWD}:/app -v /app/node-modules-p 3001:3000 --rm sample:dev
+        git clone [https://github.com/arorashu/spark-digital-equity](https://github.com/arorashu/spark-digital-equity)
+        cd spark-digital-equity
+        docker build -t sample:dev .
+        docker run -v ${PWD}:/app -v /app/node-modules-p 3001:3000 --rm sample:dev
 
 3. The application should be running at 
 

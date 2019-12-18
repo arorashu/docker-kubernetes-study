@@ -22,14 +22,42 @@ Docker is an open-source project that automates the deployment of software appli
 
         git clone [https://github.com/arorashu/spark-digital-equity](https://github.com/arorashu/spark-digital-equity)
         cd spark-digital-equity
+
+3. Create file "dockerfile" with contents as given below:
+        
+        # base image
+        FROM node:13.3.0
+        
+        # set working directory
+        WORKDIR /app
+        
+        # add `/app/node_modules/.bin` to $PATH
+        ENV PATH /app/node_modules/.bin:$PATH
+        
+        # install and cache app dependencies
+        COPY package.json /app/package.json
+        RUN npm install --silent
+        RUN npm install react-scripts@3.0.1 -g --silent
+        
+        # start app
+        CMD ["npm", "start"]
+
+4. Create file ".dockerignore" with contents:
+
+        node_modules
+
+
+5. Run the following commands:
+
         docker build -t sample:dev .
         docker run -v ${PWD}:/app -v /app/node-modules-p 3001:3000 --rm sample:dev
 
-3. The application should be running at 
+6. The application should be running at 
 
-    localhost:3001
+        localhost:3001
 
-4. This app is running in Docker!
+7. This app is running in Docker!
+8. Any changes you make to the app code will be hot reloaded!
 
 
 

@@ -54,15 +54,15 @@ Run application
     docker build -t sample:dev .
     docker run -v ${PWD}:/app -v /app/node-modules-p 3001:3000 --rm sample:dev
 
-## Screenshots
+# Screenshots
 
-create docker container
+## create docker container
 
-![https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F99e29276-a8cb-4046-a211-e7802de04bbe%2FScreenshot_2019-12-16_at_1.46.33_PM.png?table=block&id=b1ba1481-c014-428b-b388-fd702920fe10&width=4120&cache=v2](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F99e29276-a8cb-4046-a211-e7802de04bbe%2FScreenshot_2019-12-16_at_1.46.33_PM.png?table=block&id=b1ba1481-c014-428b-b388-fd702920fe10&width=4120&cache=v2)
+![https://github.com/arorashu/docker-study/blob/master/screenshots/Screenshot%202019-12-16%20at%201.46.33%20PM.png](https://github.com/arorashu/docker-study/blob/master/screenshots/Screenshot%202019-12-16%20at%201.46.33%20PM.png)
 
 run docker container
 
-![https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb58c12fb-43bb-4e11-a17c-224a771202ec%2FScreenshot_2019-12-16_at_1.45.56_PM.png?table=block&id=cf7f1232-a220-478f-9daf-5d2d04fc2b1a&width=4120&cache=v2](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb58c12fb-43bb-4e11-a17c-224a771202ec%2FScreenshot_2019-12-16_at_1.45.56_PM.png?table=block&id=cf7f1232-a220-478f-9daf-5d2d04fc2b1a&width=4120&cache=v2)
+![https://github.com/arorashu/docker-study/blob/master/screenshots/Screenshot%202019-12-16%20at%201.45.56%20PM.png](https://github.com/arorashu/docker-study/blob/master/screenshots/Screenshot%202019-12-16%20at%201.45.56%20PM.png)
 
 
 ## Dockerfile
@@ -93,7 +93,7 @@ run docker container
 
 ## App size
 
-![https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F566d9686-c088-43fb-875c-1087874d4c9a%2FScreenshot_2019-12-16_at_2.14.26_PM.png?table=block&id=b9028436-309c-404f-88c1-42e1646c50ec&width=3470&cache=v2](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F566d9686-c088-43fb-875c-1087874d4c9a%2FScreenshot_2019-12-16_at_2.14.26_PM.png?table=block&id=b9028436-309c-404f-88c1-42e1646c50ec&width=3470&cache=v2)
+![https://github.com/arorashu/docker-study/blob/master/screenshots/Screenshot%202019-12-16%20at%202.14.26%20PM.png](https://github.com/arorashu/docker-study/blob/master/screenshots/Screenshot%202019-12-16%20at%202.14.26%20PM.png)
 
 ## Conclusion
  - Docker allows in containerization and reproducibility of a dev environment
